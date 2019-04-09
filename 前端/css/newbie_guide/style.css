@@ -5,7 +5,7 @@ body{
 	font-size: 16px;
 }
 .guideHeader{
-	background: url(../image/topBg.jpg) repeat-x;
+	background: url(../../img/newbie_guide/guideHeader.png) repeat-x;
 }
 .guideHeader h2{
 	font-size: 28px;
@@ -47,7 +47,7 @@ body{
 }
 .guideHeader .dataUlNun li{
 	height: 49px;
-	background: url(../image/topyuan.png) no-repeat center;
+	/* background: url(../image/topyuan.png) no-repeat center; */
 	line-height: 35px;
 	font-size: 21px;
 }
@@ -73,7 +73,7 @@ body{
 	display: inline-block;
 	width: 19px;
 	height: 19px;
-	background: url(../image/yuan.png) no-repeat left center;
+	/* background: url(../image/yuan.png) no-repeat left center; */
 	padding-left: 10px;
 }
 .iconUl{
@@ -102,7 +102,7 @@ body{
 .advangeBox{
 	margin-top: 50px;
 	height: 81px;
-	background: url(../image/icon.png) no-repeat;
+	/* background: url(../image/icon.png) no-repeat; */
 	font-size: 16px;
 	color: #fff;
 }
