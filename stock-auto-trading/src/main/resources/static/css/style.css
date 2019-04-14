@@ -1,0 +1,247 @@
+@charset "utf-8";
+body{
+	line-height: 100%;
+	background: #f5f5f5;
+	font-size: 16px;
+}
+.guideHeader{
+	background: url(../img/newbie_guide/guideHeader.png) repeat-x;
+}
+.guideHeader h2{
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 100%;
+	padding-top: 40px;
+}
+.guideHeader h2 span{
+	font-size: 50px;
+	line-height: 75px;
+}
+.fc_c9e0fe{
+	color: #c9e0fe;
+}
+.guideHeader .main{
+	position: relative;
+	height: 300px;
+}
+.guideHeader .main .line{
+	position: absolute;
+	bottom: -1px;
+	left: 90px;
+}
+.guideHeader .dataUl{
+	overflow: hidden;
+	zoom: 1;
+	color: #ced7e7;
+	font-size: 16px;
+	line-height: 100%;
+}
+.guideHeader .dataUl li{
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+.guideHeader .dataUlNun{
+	margin: 30px 0 10px 0;
+	color: #fff;
+}
+.guideHeader .dataUlNun li{
+	height: 49px;
+	/* background: url(../image/topyuan.png) no-repeat center; */
+	line-height: 35px;
+	font-size: 21px;
+}
+.guideHeader .dataUlNun span{
+	font-size: 17px;
+}
+
+.width1000{
+	margin: 45px auto 40px auto;
+	width:990px;
+	padding-left: 10px;
+}
+.borderLeft{
+	border-left: 1px solid #a8c8f3;
+	padding:20px 0 70px 20px;
+}
+.titleBox{
+	font-size: 30px;
+	color: #000;
+	margin-left: -9px;
+}
+.titleBox span{
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	/* background: url(../image/yuan.png) no-repeat left center; */
+	padding-left: 10px;
+}
+.iconUl{
+	margin-top: 40px;
+}
+.iconUl li{
+	width: 180px;
+	float: left;
+	text-align: center;
+}
+.iconUl li p{
+	margin-top: 20px;
+	line-height: 24px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.iconUl li.firstli{
+	margin-right: 80px;
+}
+.iconUl li.secondli{
+	margin-right: 80px;
+}
+.iconUl li.threeli{
+	margin-right: 80px;
+}
+.advangeBox{
+	margin-top: 50px;
+	height: 81px;
+	/* background: url(../image/icon.png) no-repeat; */
+	font-size: 16px;
+	color: #fff;
+}
+.advangeBox span{
+	line-height: 32px;
+	display: inline-block;
+}
+.advangeBox .span01{
+	margin: 0 165px 0 20px;
+}
+.advangeBox .span02{
+	margin: 0 195px 0 0;
+}
+.advangeBox .span04{
+	margin: 15px 120px 0 10px;
+}
+.advangeBox .span05{
+	margin: 15px 125px 0 0px;
+}
+.tuwen{
+	margin-top: 60px;
+}
+.tuwen .img{
+	float: left;
+	width: 300px;
+	text-align: center;
+}
+.tuwen .txt{
+	float: left;
+	width: 610px;
+	font-weight: bold;
+}
+.tuwen .txt table{
+	width: 100%;
+	text-align: center;
+	border:solid #aeaeae; 
+	border-width:1px 1px 1px 1px;
+}
+.tuwen .txt table th{
+	background: #d9d9d9;
+	padding: 13px 0;
+}
+.tuwen .txt table td{
+	border:solid #aeaeae; 
+	border-width:1px 0px 0px 0px; 
+	padding: 15px 0;
+}
+.textRight{
+	text-align: right;
+}
+.tuwen .txt dl{
+	
+}
+.tuwen .txt dd{
+	padding: 15px 10px 15px 20px;
+	border-bottom: 1px solid #cccccc;
+}
+.tuwen .txt dd a{
+	font-size: 16px;
+	color: #2576e1;
+	line-height: 2;
+}
+.tuwen .txt dd a:hover{
+	opacity: .9;
+}
+.mt_40{
+	margin-top: 40px;
+}
+.prodcutUl{
+	margin-top: 40px;
+	font-weight: bold;
+	/*padding-bottom: 30px;*/
+}
+.prodcutUl li{
+	width: 225px;
+	height: 328px;
+	float: left;
+	background: #fff;
+	text-align: center;
+	border-radius: 20px;
+	line-height: 24px;
+	margin-right: 23px;
+	overflow: hidden;
+}
+.prodcutUl .brick-item-active{
+	-webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    /*transition:all 0.2s linear 0s;
+    transform: translate3d(0px, -2px, 0px);*/
+    /*-webkit-transform: translate3d(0, -2px, 0);
+    transform: translate3d(0, -2px, 0);*/
+}
+
+.fc_000{
+	color: #000;
+}
+.fs_45{
+	font-size: 45px;
+}
+.fc_red{
+	color: #ef6060;
+}
+.prodcutUl .fs_45{
+	line-height: 45px;
+}
+.productInfo{
+	width: 80%;
+	margin: 10px auto 10px auto;
+	color: #999;
+}
+.productInfo td,.productInfo th{
+	padding: 5px 0;
+}
+.prodcutUl .btnLink{
+	display: inline-block;
+	width: 168px;
+	height: 38px;
+	line-height: 38px;
+	border: 1px solid #f60;
+	border-radius: 20px;
+	color: #f60;
+}
+.bottomBtn{
+	display: block;
+	width: 410px;
+	height: 86px;
+	line-height: 86px;
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	background: #2576e1;
+	border-radius: 50px;
+	margin: -50px auto 50px auto;
+}
+.bottomBtn:hover{
+	opacity: .9;
+	color: #fff;
+}
+.h35{
+	display: none;
+}
