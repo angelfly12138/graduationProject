@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>智创——用户登录</title>
-    <link rel="stylesheet" th:href="@{css/base.css}" type="text/css">
-    <link rel="stylesheet" th:href="@{css/login_index.css}" type="text/css">
-    <link rel="stylesheet" th:href="@{css/header.css}" type="text/css">
-    <link rel="stylesheet" th:href="@{css/footer.css}" type="text/css">
+    <link rel="stylesheet" th:href="@{/css/base.css}" type="text/css">
+    <link rel="stylesheet" th:href="@{/css/login.css}" type="text/css">
+    <link rel="stylesheet" th:href="@{/css/login_index.css}" type="text/css">
+    <link rel="stylesheet" th:href="@{/css/header.css}" type="text/css">
+    <link rel="stylesheet" th:href="@{/css/footer.css}" type="text/css">
+    <script th:src="@{/js/common.js}"></script>
     <link rel="shortcut icon" type="image/png" th:href="@{/img/zc.ico}" />
 </head>
 <body>
@@ -19,24 +21,31 @@
         <div class="register">
             <div class="title">
                 <span>登录</span>
-                <a href="register.html">去注册</a>
+                <a href="/front/register">去注册</a>
             </div>
             <form autocomplete="off">
                 <div class="default">
                     <p>请输入用户名或手机号码</p>
-                    <input id="uname" name="uname" data-form="uname" type="text"/>
+                    <input id="uname" name="username" data-form="uname" type="text"/>
                     <label for="uname">用户名/手机</label>
                 </div>
                 <div class="default">
                     <p>请输入账号密码</p>
-                    <input id="upwd" name="upwd" data-form="upwd" type="password"/>
+                    <input id="upwd" name="password" data-form="upwd" type="password"/>
                     <label for="upwd">密码</label>
                 </div>
+                <!--<div class="default" >-->
+                    <!--<p>请输入验证码</p>-->
+                    <!--<input type="text" id="code" name="code" data-form="code" />-->
+                    <!--<label for="code">验证码</label>-->
+                    <!--<img data-th-src="@{gifCode}" id="validateCodeImg" onclick="reloadCode()" style="display:inline-block" />-->
+                <!--</div>-->
+
                 <div class="submit">
                         <span class="notice">
                             <a href="#">忘记密码</a>
                         </span>
-                    <button class="s_hover" data-form="submit">登录</button>
+                    <button class="s_hover" onclick="logins()" id="loginButton" data-form="submit">登录</button>
                 </div>
             </form>
             <div class="other_login">
@@ -64,8 +73,11 @@
     </div>
     <div data-th-include="front/footer" id="footer"></div>
 </main>
-<script data-th-src="@{js/jquery-3.2.1.js}"></script>
-<script data-th-src="@{js/base.js}"></script>
-<script data-th-src="@{js/login.js}"></script>
+<script th:inline="javascript">
+    var ctx = [[@{/}]];
+</script>
+<script data-th-src="@{/js/jquery-3.2.1.js}"></script>
+<script data-th-src="@{/js/base.js}"></script>
+<script data-th-src="@{/js/login.js}"></script>
 </body>
 </html>

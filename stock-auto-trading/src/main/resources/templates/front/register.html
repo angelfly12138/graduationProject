@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>智创——用户注册</title>
-    <link rel="stylesheet" th:href="@{css/base.css}" type="text/css" />
-    <link rel="stylesheet" th:href="@{css/register.css}" type="text/css"/>
-    <link rel="stylesheet" th:href="@{css/header.css}" type="text/css"/>
-    <link rel="stylesheet" th:href="@{css/footer.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/css/base.css}" type="text/css" />
+    <link rel="stylesheet" th:href="@{/css/register.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/css/header.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/css/footer.css}" type="text/css"/>
     <link rel="shortcut icon" type="image/png" th:href="@{/img/zc.ico}" />
 </head>
 <body>
@@ -19,7 +19,7 @@
         <div class="register">
             <div class="title">
                 <span>注册</span>
-                <a href="login.html">去登录</a>
+                <a href="/front/login">去登录</a>
             </div>
             <form autocomplete="off">
                 <div class="default">
@@ -76,8 +76,8 @@
     </div>
     <div data-th-include="front/footer" id="footer"></div>
 </main>
-<script data-th-src="@{js/jquery-3.2.1.js}"></script>
-<script data-th-src="@{js/base.js}"></script>
-<script data-th-src="@{js/register.js}"></script>
+<script data-th-src="@{/js/jquery-3.2.1.js}"></script>
+<script data-th-src="@{/js/base.js}"></script>
+<script data-th-src="@{/js/register.js}"></script>
 </body>
 </html>
