@@ -4,7 +4,6 @@ import com.zhf.common.controller.BaseController;
 import com.zhf.common.domain.ResponseBo;
 import com.zhf.common.util.MD5Utils;
 import com.zhf.system.service.UserService;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
@@ -39,7 +38,7 @@ public class IndexController extends BaseController {
     }
 
     @GetMapping("/front/info")
-    public String infoOpen(){
+    public String infoOpen() {
         return "/front/info_open";
     }
 
@@ -56,7 +55,6 @@ public class IndexController extends BaseController {
     @PostMapping("/front/login")
     @ResponseBody
     public ResponseBo login(String username, String password, Boolean rememberMe) {
-
         // 密码 MD5 加密
         password = MD5Utils.encrypt(username.toLowerCase(), password);
         UsernamePasswordToken token = new UsernamePasswordToken(username, password, rememberMe);

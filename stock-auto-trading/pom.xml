@@ -238,7 +238,12 @@
             <artifactId>commons-lang</artifactId>
             <version>2.6</version>
         </dependency>
-
+        <!-- springboot热部署工具 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
 
     </dependencies>
 
@@ -339,6 +344,14 @@
                         <!-- 开启此参数可通过反射获取方法的原始参数名，非以 args 开头 java1.8 有效,add by jyao-->
                         <arg>-parameters</arg>
                     </compilerArgs>
+                </configuration>
+            </plugin>
+            <!--开启springboot热部署-->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
                 </configuration>
             </plugin>
         </plugins>

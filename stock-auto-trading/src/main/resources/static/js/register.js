@@ -19,8 +19,8 @@ $(function () {
 
     //给注册按钮绑定单击事件，进行表单验证
     var nReg = new RegExp("^\\w{3,10}$", "i");
-    var pReg = new RegExp("^\\w{8,10}$");
-    var phReg = new RegExp("^[1][3,5,7,8]\\d{9}$");
+    var pReg = new RegExp("^\\w{6,10}$");
+    var phReg = new RegExp("^[1][3,5,6,7,8]\\d{9}$");
     var $uname = $("[data-form=uname]");
     var $upwd = $("[data-form=upwd]");
     var $upwd_2 = $("[data-form=upwd_2]");
