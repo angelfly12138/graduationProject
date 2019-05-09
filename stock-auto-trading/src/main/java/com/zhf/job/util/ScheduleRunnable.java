@@ -12,7 +12,7 @@ import com.zhf.common.util.SpringContextUtils;
 /**
  * 执行定时任务
  * 
- * @author MrBird
+ * @author hongfei.zhang
  *
  */
 public class ScheduleRunnable implements Runnable {

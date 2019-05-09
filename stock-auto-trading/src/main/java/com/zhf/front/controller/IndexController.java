@@ -52,24 +52,5 @@ public class IndexController extends BaseController {
         return "front/register";
     }
 
-//    @PostMapping("/front/login")
-//    @ResponseBody
-//    public ResponseBo login(String username, String password, Boolean rememberMe) {
-//        // 密码 MD5 加密
-//        password = MD5Utils.encrypt(username.toLowerCase(), password);
-//        UsernamePasswordToken token = new UsernamePasswordToken(username, password, rememberMe);
-//        try {
-//            Subject subject = getSubject();
-//            if (subject != null)
-//                subject.logout();
-//            super.login(token);
-//            this.userService.updateLoginTime(username);
-//            return ResponseBo.ok();
-//        } catch (UnknownAccountException | IncorrectCredentialsException | LockedAccountException e) {
-//            return ResponseBo.error(e.getMessage());
-//        } catch (AuthenticationException e) {
-//            return ResponseBo.error("认证失败！");
-//        }
-//    }
 
 }
