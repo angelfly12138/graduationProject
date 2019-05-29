@@ -53,7 +53,7 @@ spring:
         login-username: druid
         login-password: druid123
         # IP白名单
-        # allow: 127.0.0.1
+        allow: 127.0.0.1
         # IP黑名单（共同存在时，deny优先于allow）
         # deny: 192.168.1.218
 
@@ -85,6 +85,11 @@ spring:
     timeout: 0
 
   thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    content: text/html
     cache: false
 
   aop:
@@ -105,8 +110,8 @@ spring:
 #
 #info:
 #  app:
-#    name: "febs"
-#    description: "spring boot&shiro 权限管理系统"
+#    name: "stock"
+#    description: "Stock Auto-trading System"
 #    version: "2.0"
 #    spring-boot-version: "2.0.4.RELEASE"
 #

@@ -28,6 +28,6 @@ public class Application {
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
-        log.info("《《《《《《 stock-auto-trading started up successfully at {} {} 》》》》》》", LocalDate.now(), LocalTime.now());
+        log.info("《《------ Stock Auto-trading System Started Up Successfully At {} {} ------》》", LocalDate.now(), LocalTime.now());
     }
 }

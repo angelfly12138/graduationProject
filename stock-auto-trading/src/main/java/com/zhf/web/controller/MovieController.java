@@ -18,14 +18,14 @@ public class MovieController extends BaseController {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    @Log("获取热门电影信息")
+    @Log("获取热门股市信息")
     @RequestMapping("movie/hot")
     @RequiresPermissions("movie:hot")
     public String movieHot() {
         return "web/movie/hot";
     }
 
-    @Log("获取即将上映电影信息")
+    @Log("获取即将上市股市信息")
     @RequestMapping("movie/coming")
     @RequiresPermissions("movie:coming")
     public String movieComing() {
@@ -39,8 +39,8 @@ public class MovieController extends BaseController {
             String data = HttpUtils.sendSSLPost(FebsConstant.TIME_MOVIE_HOT_URL, "locationId=328");
             return ResponseBo.ok(data);
         } catch (Exception e) {
-            logger.error("获取热映影片信息失败", e);
-            return ResponseBo.error("获取热映影片信息失败，请联系网站管理员！");
+            logger.error("获取热门股市信息失败", e);
+            return ResponseBo.error("获取热门股市信息失败，请联系网站管理员！");
         }
     }
 
@@ -51,8 +51,8 @@ public class MovieController extends BaseController {
             String data = HttpUtils.sendSSLPost(FebsConstant.TIME_MOVIE_COMING_URL, "locationId=328");
             return ResponseBo.ok(data);
         } catch (Exception e) {
-            logger.error("获取即将上映影片信息失败", e);
-            return ResponseBo.error("获取即将上映影片信息失败，请联系网站管理员！");
+            logger.error("获取即将上市股市信息失败", e);
+            return ResponseBo.error("获取即将上市股市信息失败，请联系网站管理员！");
         }
     }
 
@@ -63,8 +63,8 @@ public class MovieController extends BaseController {
             String data = HttpUtils.sendSSLPost(FebsConstant.TIME_MOVIE_DETAIL_URL, "locationId=328&movieId=" + id);
             return ResponseBo.ok(data);
         } catch (Exception e) {
-            logger.error("获取影片详情失败", e);
-            return ResponseBo.error("获取影片详情失败，请联系网站管理员！");
+            logger.error("获取股市详情失败", e);
+            return ResponseBo.error("获取股市详情失败，请联系网站管理员！");
         }
     }
 
@@ -75,8 +75,8 @@ public class MovieController extends BaseController {
             String data = HttpUtils.sendSSLPost(FebsConstant.TIME_MOVIE_COMMENTS_URL, "movieId=" + id);
             return ResponseBo.ok(data);
         } catch (Exception e) {
-            logger.error("获取影片评论失败", e);
-            return ResponseBo.error("获取影片评论失败，请联系网站管理员！");
+            logger.error("获取股市评论失败", e);
+            return ResponseBo.error("获取股市评论失败，请联系网站管理员！");
         }
     }
 }

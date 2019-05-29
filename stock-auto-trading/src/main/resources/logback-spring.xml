@@ -4,12 +4,13 @@
     <contextName>stock</contextName>
     <property name="log.path" value="log" />
     <property name="log.maxHistory" value="15" />
+    <property name="log.colorPattern" value="%d{yyyy-MM-dd HH:mm:ss} | %highlight(%-5level) | %boldYellow(%thread) | %boldGreen(%logger) | %msg%n"/>
     <property name="log.pattern" value="%d{HH:mm:ss.SSS} %contextName [%thread] %-5level %logger{36} - %msg%n" />
 
     <!--输出到控制台-->
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>${log.pattern}</pattern>
+            <pattern>${log.colorPattern}</pattern>
         </encoder>
     </appender>
 

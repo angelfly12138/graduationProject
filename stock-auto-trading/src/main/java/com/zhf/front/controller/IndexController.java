@@ -42,6 +42,11 @@ public class IndexController extends BaseController {
         return "/front/info_open";
     }
 
+    @GetMapping("/front/search")
+    public String searchProduct() {
+        return "/front/product_search";
+    }
+
     @GetMapping("/front/login")
     public String login() {
         return "front/login";
@@ -52,5 +57,48 @@ public class IndexController extends BaseController {
         return "front/register";
     }
 
+    @GetMapping("/front/itme1")
+    public String itme1() {
+        return "/front/itme1";
+    }
 
+    @GetMapping("/front/itme2")
+    public String itme2() {
+        return "/front/itme2";
+    }
+
+    @GetMapping("/front/itme3")
+    public String itme3() {
+        return "/front/itme3";
+    }
+
+    @GetMapping("/front/itme4")
+    public String itme4() {
+        return "/front/itme4";
+    }
+
+    @GetMapping("/front/itme5")
+    public String itme5() {
+        return "/front/itme5";
+    }
+
+    @GetMapping("/front/itme6")
+    public String itme6() {
+        return "/front/itme6";
+    }
+
+    @GetMapping("/front/itme7")
+    public String itme7() {
+        return "/front/itme7";
+    }
+
+    @GetMapping("/front/stock")
+    public String stock() {
+        return "/front/stock";
+    }
+
+    @GetMapping("/front/shenzhen")
+    public String shenzhen() {
+        return "/front/shenzhen";
+    }
 }

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>智创——智创投资</title>
+    <link rel="stylesheet" th:href="@{/css/base.css}" type="text/css">
+    <link rel="stylesheet" th:href="@{/css/cart.css}" type="text/css">
+    <link rel="stylesheet" th:href="@{/css/header.css}" type="text/css">
+    <link rel="stylesheet" th:href="@{/css/footer.css}" type="text/css">
+    <link rel="shortcut icon" type="image/png" th:href="@{/img/zc.ico}"/>
+</head>
+
+<body>
+    <div id="main">
+        <div data-th-include="front/header" id="header"></div>
+        <div id="container">
+            <div class="cart_head">
+                <h2>我的购物车</h2>
+            </div>
+            <div class="cart-content">
+                <div class="cart_list">
+                    <ul class="list_box">
+                        <li>
+                            <input id="check_all" type="checkbox" />&nbsp;&nbsp;全选
+                        </li>
+                        <li>投资期限</li>
+                        <li>单份金额</li>
+                        <li>投资份数</li>
+                        <li>小计</li>
+
+                    </ul>
+                </div>
+                <div class="cart_list_body">
+                    <div class="cart_item_list">
+                        <div class="item_box">
+                            <ul class="item_list">
+                                <li class="col_check">
+                                    <input class="check_option" data-item="check_option" type="checkbox" />
+                                </li>
+                                <li class="col_img" data-item="img">
+                                    <img class="pro_img" src="../img/product_search/pro_015.jpg" data-src="../img/pro_11.jpg" alt="" />
+                                </li>
+                                <li class="col_name" data-item="name">
+                                    一年
+                                </li>
+                                <li class="col_price" data-item="price">
+                                    24998元
+                                </li>
+                                <li class="col_num">
+                                    <span class="change_num">
+                                        <input class="cart_btn" data-btn="minus" type="button" value="-" />
+                                        <input class="cart_count" data-btn="count" type="text" value="1" />
+                                        <input class="cart_btn" data-btn="add" type="button" value="+" />
+                                    </span>
+                                </li>
+                                <li class="col_total" data-item="total_price">
+                                    24998元
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <div class="payment">
+                        <div class="pro_total">
+                            已选&nbsp;&nbsp;<b id="cart_pro_total">0</b>&nbsp;&nbsp;件商品
+                        </div>
+                        <div class="price_total">
+                            合计：
+                            <b id="cart_price_total">0</b>
+                            元
+                        </div>
+                        <div class="cart_submit" id="cart_submit">
+                            确认结算
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-th-include="front/footer" id="footer"></div>
+        <div class="succ">
+            <span id="closeBtn" href="javascript:void(0);" class="close-login">关闭</span>
+            <h4>投资成功</h4>
+            <p>预期收益
+                <b id="price" style="color:brown">0</b> 元
+            </p>
+        </div>
+    </div>
+  
+    <div id="bg" class="login-bg"></div>
+    <script data-th-src="@{/js/jquery-3.2.1.js}"></script>
+    <script data-th-src="@{/js/base.js}"></script>
+    <script data-th-src="@{/js/product_search.js}"></script>
+    <script data-th-src="@{/js/cart.js}"></script>
+     <script>
+        // localStorage.clear();
+    </script> 
+</body>
+
+</html>
