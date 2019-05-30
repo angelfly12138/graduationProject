@@ -31,7 +31,7 @@ public class LogController extends BaseController {
         return "system/log/log";
     }
 
-    @RequestMapping("log/list")
+    @RequestMapping("/log/list")
     @ResponseBody
     public Map<String, Object> logList(QueryRequest request, SysLog log) {
         return super.selectByPageNumSize(request, () -> this.logService.findAllLogs(log));
