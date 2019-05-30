@@ -89,8 +89,9 @@ spring:
     suffix: .html
     mode: LEGACYHTML5
     encoding: UTF-8
-    content: text/html
     cache: false
+    servlet:
+      content-type: text/html
 
   aop:
     proxy-target-class: true
